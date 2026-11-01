@@ -10,13 +10,8 @@ import {
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import RecruitmentSection from "@/components/RecruitmentSection";
-import HalloweenPhotoBooth from "@/components/HalloweenPhotoBooth";
-import HalloweenHero from "@/components/HalloweenHero";
-import "./halloween.css";
 import { publicPageMetadata, serializeJsonLd, SITE_DESCRIPTION, SITE_NAME, SITE_URL } from "@/lib/seo";
 
-// Flip this off to remove the temporary homepage theme and photo booth.
-const HALLOWEEN_THEME = true;
 
 export const metadata = publicPageMetadata("/");
 
@@ -59,12 +54,12 @@ const structuredData = {
 
 export default function Home() {
   return (
-    <div className={HALLOWEEN_THEME ? "halloween-home overflow-x-hidden" : "overflow-x-hidden"}>
+    <div className="overflow-x-hidden">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: serializeJsonLd(structuredData) }} />
       <Header animate />
       <main id="main-content">
       {/* First section */}
-      {HALLOWEEN_THEME ? <HalloweenHero /> : <section className="w-full md:h-full overflow-x-hidden">
+      <section className="w-full md:h-full overflow-x-hidden">
         {/* Hero srction */}
         <div className="flex items-center gap-10 md:gap-44 flex-col md:flex-row">
           <div>
@@ -104,7 +99,6 @@ export default function Home() {
               </Link>{" "}
               <br /> since the year 2011, and much More.{" "}
             </div>
-            {HALLOWEEN_THEME && <Link href="#halloween-booth" className="w-fit rounded-full border border-[#c88af4]/70 bg-[#51235f]/50 px-5 py-3 font-semibold text-white transition hover:bg-[#74358a] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">Enter the photo lab</Link>}
           </div>
         </div>
         <div className="md:flex justify-center mt-14 hidden">
@@ -116,9 +110,7 @@ export default function Home() {
             className="animate-bounce motion-reduce:animate-none"
           ></Image>
         </div>
-      </section>}
-
-      {HALLOWEEN_THEME && <HalloweenPhotoBooth />}
+      </section>
 
       {/* <section className="relative max-md:mt-20">
         <HackathonSection />

@@ -14,7 +14,7 @@ Preserve the existing theme and colors. Edited UI and generated captions use
 Aldrich from [`layout.tsx`](../src/app/layout.tsx) and `--font-robocon`.
 Use `border-radius: 0`, no `rounded-*` classes, new fonts, or new palette.
 Supplied artwork may retain its own lettering/shapes. Do not restyle unrelated
-pages because legacy font configuration exists. See [Halloween design](halloween-design.md).
+pages because legacy font configuration exists.
 
 Place a reusable component in its existing feature directory, give props concrete
 types, and compose existing controls. Keep labels, keyboard access, focus, alt

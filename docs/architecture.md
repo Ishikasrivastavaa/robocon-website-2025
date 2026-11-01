@@ -7,7 +7,7 @@ public data paths also use the anonymous Supabase client.
 
 | Area | Implementation |
 | --- | --- |
-| Public website and seasonal homepage | [`page.tsx`](../src/app/page.tsx), `src/app/{team,projects,achievements,alumni,events,gallery,blog}` |
+| Public website and homepage | [`page.tsx`](../src/app/page.tsx), `src/app/{team,projects,achievements,alumni,events,gallery,blog}` |
 | Layout, font, metadata | [`layout.tsx`](../src/app/layout.tsx), [`seo.ts`](../src/lib/seo.ts) |
 | Dashboard/CMS | `src/app/dashboard`, [`content-resources.ts`](../src/lib/content-resources.ts), `src/components/admin` |
 | Staff/member sessions | [`session.ts`](../src/lib/session.ts), [`proxy.ts`](../src/proxy.ts) |
@@ -26,7 +26,3 @@ Recruitment question answering in `src/lib/rag` uses Voyage embeddings and Groq
 or Anthropic answers. PDF/image generation uses Puppeteer/Chromium and Sharp.
 These existing dependencies should not be removed without tracing their consumers.
 Vercel cron schedules are in [`vercel.json`](../vercel.json).
-
-`HALLOWEEN_THEME` in `src/app/page.tsx` controls the seasonal homepage. Its photo
-booth processes photos in the browser. Maintenance must preserve this behavior,
-the theme, and its assets.

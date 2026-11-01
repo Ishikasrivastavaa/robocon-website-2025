@@ -1,5 +1,7 @@
 # Halloween homepage
 
+Historical design reference. The seasonal homepage was removed after Halloween.
+
 Scope: temporary homepage only; existing site identity remains authoritative elsewhere.
 
 Scene: a visitor steps into a dark university robotics lab at midnight. Violet illumination, amber robot eyes, fog at floor level. Palette: #09070f base, #1b1228 surfaces, #b999e8 lighting, #f0dfc4 text, #f6b55e action.

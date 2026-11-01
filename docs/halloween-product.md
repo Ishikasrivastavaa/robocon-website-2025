@@ -1,5 +1,7 @@
 # Product
 
+Historical product scope. The seasonal homepage was removed after Halloween.
+
 ## Platform
 Web: existing Next.js SRM Team Robocon website.
 

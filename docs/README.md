@@ -17,7 +17,7 @@ editing. Current source is authoritative; archived plans are not implementation 
 | Academia | [Member dashboard integration](academia.md) |
 | RFID hardware | [Attendance README](../attendance/README.md) |
 | Bazaar | [Feature notes](bazaar/README.md) |
-| Halloween | [Design](halloween-design.md), [product scope](halloween-product.md) |
+| Past Halloween design | [Design](halloween-design.md), [product scope](halloween-product.md) |
 | Local environment organization | [Environment files](environment-files.md) |
 | Repository audit | [Cleanup report](cleanup-report.md), [route inventory](route-inventory.md) |
 | Historical material | [Archive](archive/README.md) |

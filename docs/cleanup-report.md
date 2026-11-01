@@ -61,9 +61,8 @@ deletion of local scratch folders was performed.
 
 - All `public` assets, fallback JSON, service worker, SQL, firmware, integration
   scripts, build/deployment config, and lockfiles remain.
-- `haloween` contains source artwork, including nine byte-identical pairs with
-  deployed `public/halloween` files. Both sets remain: original supplied filenames
-  preserve provenance; public paths are runtime contracts.
+- `haloween` contains original supplied artwork and remains for provenance.
+  The deployed `public/halloween` copies were removed with the seasonal homepage.
 - `src/components/blog/BlogEditor.tsx.tmp.9125.85826116d22d` differs from the active
   editor (29 insertions/56 deletions in comparison). It remains tracked for owner
   review because it may contain unfinished work; the new ignore pattern does not
